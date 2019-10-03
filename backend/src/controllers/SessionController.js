@@ -5,6 +5,6 @@ module.exports = {
         const { email } = req.body; // O nome desse tipo de "extração" é desestruturação
         const user = await User.create({ email });
         
-        return res.json({ message: 'teste' });
+        return res.json(user);
     }
 };
