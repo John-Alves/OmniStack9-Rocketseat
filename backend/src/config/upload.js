@@ -8,7 +8,7 @@ module.exports = {
             const exe = path.extname(file.originalname);
             const name = path.basename(file.originalname, exe);
 
-            cb(null, `${name}-${Date.now()}${path.extname(exe)}`)
+            cb(null, `${name}-${Date.now()}${exe}`)
         }
     })
 }
